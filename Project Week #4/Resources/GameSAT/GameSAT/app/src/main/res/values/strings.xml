@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GameSAT</string>
+    <string name="logo">logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign">Sign Up</string>
+    <string name="register">Register Here.</string>
+    <string name="goLog">Go to Login.</string>
+    <string name="play">Play</string>
+    <string name="train">Train</string>
+    <string name="train_word">Word Train</string>
+    <string name="train_passage">Passage Train</string>
+    <string name="play_word">Word Play</string>
+    <string name="play_passage">Passage Play</string>
+    <string name="back">Back</string>
+</resources>
