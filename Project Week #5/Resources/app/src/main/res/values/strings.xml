@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GameSAT</string>
+    <string name="logo">logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign">Sign Up</string>
+    <string name="register">Register Here.</string>
+    <string name="goLog">Go to Login.</string>
+    <string name="play">Play</string>
+    <string name="train">Train</string>
+    <string name="train_word">Word Train</string>
+    <string name="train_passage">Passage Train</string>
+    <string name="play_word">Word Play</string>
+    <string name="play_passage">Passage Play</string>
+    <string name="back">Back</string>
+    <string name="exit">Exit</string>
+    <string name="questionW">Word Question:</string>
+    <string name="questionP">Passage Question:</string>
+    <string name="op1">Option 1</string>
+    <string name="op2">Option 2</string>
+    <string name="op3">Option 3</string>
+    <string name="level">Level</string>
+    <string name="confirm">Confirm</string>
+    <string name="skip">Skip Question</string>
+    <string name="bestScoreWord">Word Leader Board</string>
+    <string name="bestScorePassage">Passage Leader Board</string>
+    <string name="gameOver">Game Over.</string>
+    <string name="youWin">Congratulations! You Won.</string>
+    <string name="time">Time</string>
+    <string name="help">Help</string>
+    <string name="gameRules">In play mode try to reach a score of 30 as fast as possible.
+        The fastest times are displayed in a leader board.
+        Each correct response awards a point to your score, while an incorrect one removes
+        a point from your score. If your score becomes zero, the game ends.
+        Using the Back button in play mode can cause you to lose all progress.
+        You can Skip questions in play mode without a point penalty. Use the training mode as
+        a practice tool to strengthen weaknesses. The EXIT button causes you to leave the app
+        altogether, and all progress can be lost.
+    </string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_play"
+    android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+    tools:context=".PlayScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPlayWord"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="240dp"
+        app:cardBackgroundColor="@color/bistre"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/buttonPlayWord"
+            android:layout_width="253dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/play_word"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPlayPassage"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        app:cardBackgroundColor="@color/bistre"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewPlayWord">
+
+        <Button
+            android:id="@+id/buttonPlayPassage"
+            android:layout_width="228dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/play_passage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardViewPlayPassage"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewPlayPassage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardViewPlayPassage"
+            app:layout_constraintTop_toTopOf="@+id/cardViewPlayPassage" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewWordBestScore"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="252dp"
+        app:cardBackgroundColor="@color/burgundy"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bWordLeaderBoard"
+            android:layout_width="194dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/bestScoreWord"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewPlayPassage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardViewPlayPassage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPassBestScore"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        app:cardBackgroundColor="@color/burgundy"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardViewWordBestScore">
+
+        <Button
+            android:id="@+id/bPassLeaderBoard"
+            android:layout_width="194dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/bestScorePassage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewPlayPassage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardViewPlayPassage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBackPlay"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        app:cardBackgroundColor="@color/bistre"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewPlayPassage">
+
+        <Button
+            android:id="@+id/buttonBackPlay"
+            android:layout_width="112dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPlayExit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:cardBackgroundColor="@color/burgundy"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonPlayExit"
+            android:layout_width="39dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/exit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="337dp"
+            tools:layout_editor_absoluteY="31dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
